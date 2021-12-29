@@ -9,16 +9,16 @@ public class PlainVSParralalStream {
         long start = 0;
         long end = 0;
 
-//        start = System.currentTimeMillis();
-//        IntStream.range(1, 100).forEach(System.out::println);
-//        end = System.currentTimeMillis();
-//        System.out.println("Plaing stream took time : " + (end - start));
-//
-//        System.out.println("--------------------");
-//        start = System.currentTimeMillis();
-//        IntStream.range(1,100).parallel().forEach(System.out::println);
-//        end = System.currentTimeMillis();
-//        System.out.println("Parallel stream took time : " + (end - start));
+        start = System.currentTimeMillis();
+        IntStream.range(1, 100).forEach(System.out::println);
+        end = System.currentTimeMillis();
+        System.out.println("Plaint stream took time : " + (end - start));
+
+        System.out.println("--------------------");
+        start = System.currentTimeMillis();
+        IntStream.range(1,100).parallel().forEach(System.out::println);
+        end = System.currentTimeMillis();
+        System.out.println("Parallel stream took time : " + (end - start));
 
 
 
